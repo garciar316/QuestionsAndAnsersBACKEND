@@ -1,0 +1,21 @@
+#Data source
+#Indica el driver/lib para conectar java a mysql
+spring:
+  datasource:
+    url: jdbc:sqlserver://DESKTOP-8SOB270;databaseName=QUESTIONS_AND_ANSWERS
+    username: sergio
+    password: 1234
+  # mostrar sentencias SQL en la consola
+  jpa:
+    show-sql: true
+# actualizar base de datos y crear entidades
+    hibernate:
+      ddl-auto: create-drop
+  sql:
+    init:
+      mode: embedded
+logging:
+  level.org:
+    hibernate:
+      SQL: debug
+
