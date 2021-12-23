@@ -1,3 +1,7 @@
+myapp:
+  property:
+    crossOrigin: "http://localhost:4200"
+
 #Data source
 #Indica el driver/lib para conectar java a mysql
 spring:
@@ -11,9 +15,6 @@ spring:
 # actualizar base de datos y crear entidades
     hibernate:
       ddl-auto: create-drop
-  sql:
-    init:
-      mode: embedded
 logging:
   level.org:
     hibernate:
